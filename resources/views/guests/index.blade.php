@@ -331,7 +331,7 @@
         {{-- Pagination --}}
         @if ($guests->hasPages())
             <div class="guest-pagination">
-                {{ $guests->withQueryString()->links() }}
+                {{ $guests->withQueryString()->links('pagination::bootstrap-5') }}
             </div>
         @endif
 

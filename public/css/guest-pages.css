@@ -424,3 +424,84 @@ textarea.guest-field {
         margin-right: 0;
     }
 }
+/* Laravel Bootstrap 5 pagination */
+.guest-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    border-top: 1px solid #e9ecf1;
+    background: #fff;
+}
+
+.guest-pagination nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.guest-pagination nav > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.guest-pagination nav p {
+    margin: 0;
+    color: #737985;
+    font-size: 12px;
+}
+
+.guest-pagination .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+}
+
+.guest-pagination .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 8px !important;
+    border: 1px solid #e5e8ee;
+    color: #4d5563;
+    background: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.guest-pagination .page-item.active .page-link {
+    color: #fff;
+    background: #b7192f;
+    border-color: #b7192f;
+}
+
+.guest-pagination .page-item.disabled .page-link {
+    color: #a5abb5;
+    background: #f8f9fb;
+}
+
+.guest-pagination .page-link:hover {
+    color: #b7192f;
+    background: #fff0f2;
+    border-color: #f0cbd1;
+}
+
+@media (max-width: 576px) {
+    .guest-pagination {
+        justify-content: center;
+        padding: 14px 10px;
+    }
+
+    .guest-pagination nav,
+    .guest-pagination nav > div {
+        justify-content: center;
+    }
+}
